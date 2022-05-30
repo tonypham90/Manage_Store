@@ -10,9 +10,9 @@ public class LabelRemove : PageModel
 {
     public string? Notification { get; set; }
     [BindProperty(SupportsGet = true)]
-    public string Label { get; set; }
+    public string? Label { get; set; }
     [BindProperty]
-    public string TargetLabel { get; set; }
+    public string? TargetLabel { get; set; }
     
     public void OnGet()
     {

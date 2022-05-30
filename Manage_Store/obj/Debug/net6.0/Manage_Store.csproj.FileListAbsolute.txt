@@ -26,6 +26,8 @@
 /Users/tonypham/RiderProjects/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/Debug/net6.0/ref/Manage_Store.dll
 /Users/tonypham/RiderProjects/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.pdb
 /Users/tonypham/RiderProjects/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.genruntimeconfig.cache
+<<<<<<< Updated upstream
+=======
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/appsettings.Development.json
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/appsettings.json
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/Manage_Store.staticwebassets.runtime.json
@@ -58,3 +60,5 @@
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/DataSaleHistory.json
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/DataStore.json
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/Debug/net6.0/refint/Manage_Store.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/DataBillDetail.json
+>>>>>>> Stashed changes

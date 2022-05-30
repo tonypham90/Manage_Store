@@ -9,14 +9,16 @@ public static class DataWorkFlow
     private static readonly DirectoryInfo DirectoryInfo = new DirectoryInfo(CurrentDir);
     private static readonly FileInfo ItemLabelList = new FileInfo("DataLabel.json");
     private static readonly FileInfo ImportRecord = new FileInfo("DataImportHistory.json");
-    private static FileInfo SaleRecord { get; } = new FileInfo("DataSaleHistory.json");
+    private static readonly FileInfo ImportDetail = new FileInfo("DataImportDetail.json");
+    private static readonly FileInfo SaleRecord = new FileInfo("DataSaleHistory.json");
+    private static readonly FileInfo BillDetail = new FileInfo("DataBillDetail.json");
     private static readonly FileInfo ItemStore = new FileInfo("DataStore.json");
     
     //space for label
-    public static bool AddNewLabel(string? newLabel)
+    public static bool AddNewLabel(string newLabel)
     {
         List<string> currentLabel = DownloadListLabel();
-        if (newLabel != null)
+        if (!string.IsNullOrEmpty(newLabel))
         {
             newLabel = newLabel.ToUpper();
             
@@ -89,6 +91,29 @@ public static class DataWorkFlow
     //End Of store info
 
     //import store
+    public static List<ImportRecord>? DownloadDataRecordImports() //Get data from source to user
+    {
+        List<ImportRecord>? resList;
+        StreamReader fileReader = new StreamReader(ImportRecord.FullName);
+        string jsonstring = fileReader.ReadToEnd();
+        fileReader.Close();
+        resList = JsonConvert.DeserializeObject<List<ImportRecord>>(jsonstring);
+        return resList;
+    }
+
+    public static bool UploadImportRecord(List<ImportRecord> historyImports)
+    {
+        if (historyImports.Count == 0)
+        {
+            return false;
+        }
+
+        StreamWriter fileWriter = new StreamWriter(ImportRecord.FullName);
+        string jsonstring = JsonConvert.SerializeObject(historyImports);
+        fileWriter.Write(jsonstring);
+        fileWriter.Close();
+        return true;
+    }
 
     //End Import
 

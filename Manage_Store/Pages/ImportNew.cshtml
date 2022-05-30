@@ -1,0 +1,45 @@
+@page
+@model Manage_Store.Pages.ImportNew
+
+@{
+    ViewData["Title"] = "Nhap Hang moi";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nhap Hang moi</title>
+</head>
+<body>
+<h1>Ma don nhap kho: #@Model.ImportId</h1>
+<div>
+    Thong tin mat hang:<br/>
+    Ten san pham: @Model.CurrentItem.Name <br/>
+    Nha san xuat: @Model.CurrentItem.Manufacture<br/>
+    So luong trong kho: @Model.CurrentItem.Qty.ToString("0")<br/>
+    <form method="post">
+        <label for="Nhap Hang">So luong nhap kho</label>
+        <input type="number" min="1" max="9999" value="ImportValue"/><br/>
+        <label for = "Ngay nhap"></label>
+        <input type="submit"/>
+    </form>
+    <button class="btn-outline-secondary" onclick="window.location.href='/Index'">Tro ve</button>
+</div>
+<div class="alert-warning">@Model.Notification</div>
+@{
+        if (Model.RequestStatus)
+        {
+            <p class="alert alert-success">
+                <strong>Cap Nhat Thanh Cong</strong>
+            </p>
+        }
+        else
+        {
+            <p class="alert-warning">
+                <strong>Cap nhat that bai: kiem tra lai</strong>
+            </p>
+        }
+    }
+</body>
+</html>

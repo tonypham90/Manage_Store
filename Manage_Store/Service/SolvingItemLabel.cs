@@ -20,7 +20,7 @@ public class SolvingItemLabel
         return DataWorkFlow.DownloadListLabel();
     }
 
-    public static string RemoveLabel(string labelTarget)
+    public static string RemoveLabel(string? labelTarget)
     {
         List<string> currentLabelList = DataWorkFlow.DownloadListLabel();
         List<string> newLabeList = new List<string>();

@@ -21,5 +21,22 @@ public class ManipulateFunction
         }
         return id;
     }
+
+    public static string CreateImportId()
+    {
+        List<ImportRecord> currentListdDataRecordImports = DataWorkFlow.DownloadDataRecordImports();
+        string id = String.Empty;
+        List<string> currentIdList = new List<string>();
+        foreach (ImportRecord item in currentListdDataRecordImports)
+        {
+            currentIdList.Add(item.ImportId);
+        }
+        while (string.IsNullOrEmpty(id)|| currentIdList.Contains(id))
+        {
+            Random ran = new Random();
+            id = ran.Next(9999).ToString("0000");
+        }
+        return id;
+    }
     
 }
