@@ -1,0 +1,24 @@
+@page
+@model Manage_Store.Pages.LabelRemove
+
+@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Xoa san pham</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <label class="text-warning">Ten Loai hang can xoa</label><br/>
+        <input class="input-group-text" type="text" name="RemoveLabel" value="@Model.Label"/>
+        <input class="text-dark" type="submit" value="Xoa"/><button class="text-dark" type="button" value="Return" onclick="" ><a href="/LabelCreate">Ve danh Sach Mat Hang</a></button>
+    </form>
+    @Model.Notification
+</div>
+</body>
+</html>

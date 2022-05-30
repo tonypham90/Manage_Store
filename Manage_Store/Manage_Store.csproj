@@ -12,18 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="DAL" />
       <Folder Include="DATA" />
-      <Folder Include="Service" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="Entity\Item.cs" />
-      <Compile Remove="Pages\Store.cshtml.cs" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Remove="Pages\Store.cshtml" />
     </ItemGroup>
 
 </Project>

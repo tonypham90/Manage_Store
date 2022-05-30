@@ -1,0 +1,63 @@
+@page
+@model Manage_Store.Pages.ItemUpdate
+
+@{
+    ViewData["Title"] = "Cap nhat san pham";
+}
+
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <title> Tao san pham moi</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <fieldset>
+            <legend>Thong tin san pham moi</legend>
+            <label class="form-label">Ma hang hien tai: <strong>@Model.id</strong></label><br/><br/>
+            @* <input class="text-dark" type="text" readonly="readonly" name="ItemId" value="@Model.ItemId"/><br/><br/> *@
+            <label class="form-label">Ten san pham</label><br/>
+            <input type="text" value="@Model.ItemName" class="text-dark" name="ItemName" minlength="1" required="required"/><br/><br/>
+            <label class="form-label">Cty San Xuat</label><br/>
+            <input type="text" value="@Model.ItemManu" class="text-dark" name="ItemManu" minlength="1" required="required"/><br/><br/>
+            <label class="form-label">So luong san pham ban dau</label><br/>
+            <input type="number" value="@Model.ItemQty.ToString("D0")" name="ItemQty" class="text-dark" step="1" min="0"/><br/><br/>
+            <label class="form-label">Gia san pham (dong/unit)</label><br/>
+            <input type="number" value="@Model.ItemPrice.ToString("D0")" name="ItemPrice" class="text-dark" step="500" min="1000"/><br/><br/>
+            <label class="text-dark:"> Chon loai hang</label><br/>
+            <select name="ItemLabel">
+                @{
+                    foreach (string element in Model.ItemlabelList)
+                    {
+                        <option value="@element">@element</option>
+                    }
+                }
+            </select>
+            <br/><br/>
+            <label class="form-label">Han su dung (Hien Tai @Model.ItemExp.ToLongDateString())</label><br/>
+            <input type="date" name="ItemExp" required="required" max="@DateTime.Today.Date"/><br/><br/>
+            <label class="form-label">Ngay san xuat (Hien tai: @Model.ItemMfg.Date.ToLongDateString())</label><br/>
+            <input type="date" name="ItemMfg" required="required" autocomplete="off" minlength="1"/><br/><br/>
+            <input type="submit" class="btn btn-secondary" value="Nhap"/>
+            <button class="btn btn-secondary" onclick="window.location.href='/index'">Tro ve</button>
+        </fieldset>
+    </form>
+    @{
+        if (Model.StatusUpdateData)
+        {
+            <p class="alert alert-success">
+                <strong>@Model.Notification</strong>
+            </p>
+        }
+        else
+        {
+            <p class="alert-warning">
+                <strong>@Model.Notification</strong>
+            </p>
+        }
+    }
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@page
+@model Manage_Store.Pages.ItemRemove
+
+@{
+    ViewData["Title"] = "Xoa mat hang";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Xoa Mat Hang</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <label class="form-label"> Ban co muon xoa mat hang co ma: @Model.id </label>
+        <input type="submit"/>
+    </form>
+</div>
+</body>
+</html>

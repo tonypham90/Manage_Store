@@ -1,0 +1,24 @@
+@page
+@model Manage_Store.Pages.LabelUpdate
+
+@{
+    ViewData["Title"] = "Cap Nhat Loai San Pham";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Cap Nhat Loai Hang</title>
+</head>
+<body>
+<div>
+    <form method="Post">
+        <label>Cap nhat ten Loai Hang @Model.Label thanh:</label>
+        <input type="text" name="newLabel" value="@Model.NewLabel"/><br/>
+        <input type="submit"/><button type="button"><a href="/LabelCreate">Tro ve</a></button>
+    </form>
+    @Model.Notification
+</div>
+</body>
+</html>

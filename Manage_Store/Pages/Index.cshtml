@@ -1,15 +1,20 @@
 ﻿@page
+@using Microsoft.AspNetCore.Http.Features
+@using Manage_Store.Entity
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
+<header>
+  <h1 class="h1">Kho Hang</h1>
+</header>
+<body>
+<h6>Chuc Nang</h6><br/>
+<section class="btn-group-lg">
+        <button class="btn btn-outline-primary" onclick="window.location.href='/ItemCreate'">Tao San Pham Moi</button>
+        <button class="btn btn-outline-primary" onclick="window.location.href='/LabelCreate'">Cap Nhat Loai Hang</button>
+    </section>
 
-<<<<<<< Updated upstream
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-=======
 <section>
     <fieldset class="border-primary">
         <legend title="Tim kiem">
@@ -57,7 +62,7 @@
                         <td>@Item.Price.ToString("N0")</td>
                         <td>@Item.Label</td>
                         <td>
-                            <button class="btn btn-outline-secondary" onclick="window.location.href='/ImportNew?ItemId=@Item.Id'">Nhap Kho</button>
+                            <button class="btn btn-outline-secondary" onclick="window.location.href='/ImportNew?ItemId=@Item.Id'">Nhap Hang</button>
                             <button class="btn btn-outline-secondary" onclick="window.location.href='/itemupdate?id=@Item.Id'">Cap Nhat</button>
                             <button class="btn btn-outline-secondary" onclick="window.location.href='/itemremove?id=@Item.Id'">Xoa</button>
                         </td>
@@ -67,4 +72,3 @@
     </table>
 </section1>
 </body>
->>>>>>> Stashed changes
