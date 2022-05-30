@@ -22,6 +22,13 @@ public class IndexModel : PageModel
     [BindProperty]
     public string Keyword { get; set; }
 
+    public List<StrucItem> ItemsInStore = SolvingItem.RequestLoadStore();
+    public List<StrucItem> ItemsShow { get; set; }
+    [BindProperty]
+    public string ChoiceFunc { get; set; }
+    [BindProperty]
+    public string Keyword { get; set; }
+
     public void OnGet()
     {
         ChoiceFunc = String.Empty;
