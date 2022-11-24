@@ -1,0 +1,24 @@
+@page
+@model Manage_Store.Pages.Importremove
+
+@{
+    ViewData["title"] = "Xoa nhap kho";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Xoa don nhap kho</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <label>Ban dong y xoa don hang</label>
+        <input type="text" name="importid" value="@Model.importid" readonly="readonly"/><br/>
+        <input type="submit" value="Dong y"/> <input type="button" value="Tu choi" onclick="window.location.href='/import'"/>
+    </form>
+    @Model.notification;
+</div>
+</body>
+</html>

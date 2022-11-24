@@ -1,4 +1,5 @@
 using Manage_Store.DAL;
+using Manage_Store.Entity;
 using Microsoft.AspNetCore.Http.Features;
 
 namespace Manage_Store.Service;
@@ -44,9 +45,11 @@ public class SolvingItemLabel
     public static string UpdateLabel(string? oldLabel, string? newLabel)
     {
         List<string> currentLabelList = DataWorkFlow.DownloadListLabel();
+        List<StrucItem>? currentItemsList = DataWorkFlow.DownloadListItem();
         List<string> newLabeList = new List<string>();
+        List<StrucItem>? ItemsneedUpdateID = new List<StrucItem>();
         newLabel = newLabel!.ToUpper();
-        int countitemUpdated;
+        int countitemUpdated = 0;
         if (currentLabelList!.Contains(newLabel))
         {
             //Update new label for item relative with old label
@@ -62,10 +65,19 @@ public class SolvingItemLabel
             }
             newLabeList.Add(elementLabel);
         }
+        //Update Store
+        string funcChoise = "4";//find Item case 4
+        ItemsneedUpdateID = SolvingItem.FindlistItems(oldLabel, funcChoise);
+        foreach (StrucItem item in ItemsneedUpdateID)
+        {
+            StrucItem newItem = item;
+            newItem.Label = newLabel;
+            SolvingItem.RequestUpdateItem(newItem.Id, newItem);
+        }
 
         bool uploadstatus = DataWorkFlow.UploadLabel(newLabeList);
         //Update new label for item relative with old label
-        countitemUpdated = 0;
+        countitemUpdated = ItemsneedUpdateID.Count;
         //
         return $"upload status{uploadstatus}, So mat hang thay doi loai hang tuong ung la {countitemUpdated}";
     }

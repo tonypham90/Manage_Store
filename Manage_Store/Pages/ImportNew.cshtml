@@ -1,0 +1,46 @@
+@page
+@using Manage_Store.Entity
+@model Manage_Store.Pages.ImportNew
+
+@{
+    ViewData["Title"] = "Tao don hang moi";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tao don hang moi</title>
+<h4>Ma don Nhap Kho:<strong>#@Model.NewImportId</strong></h4>
+</head>
+<body>
+<div>
+    Thong tin san pham:<br/>
+    Ten: @Model.ItemName<br/>
+    Cty San suat: @Model.ItemManuf<br/>
+    So luong trong kho: @Model.ItemQty.ToString("0")
+    <section>
+        <form method="post">
+            <label>Ngay Nhap kho</label>
+            <input type="date" name="ImportDate" required="required"/><br/>
+            <label>So luong:</label>
+            <input type="number" name="ImportQty" min="0" step="1" required="required"/><br/>
+            <input type="submit" value="Nhap kho"/> <input type="button" onclick="window.location.href='/index'" value="tro ve"/>
+        </form></section>
+    @{
+        if (string.IsNullOrEmpty(@Model.Notification))
+        {
+            switch (@Model.Status)
+            {
+                case true:
+                    Response.Redirect("/index");
+                    break;
+                case false:
+                    <p class="alert-warning">@Model.Notification</p>;
+                    break;
+            }
+        }
+    }
+</div>
+</body>
+</html>

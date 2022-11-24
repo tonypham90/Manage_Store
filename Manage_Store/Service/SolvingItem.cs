@@ -7,24 +7,24 @@ public static class SolvingItem
 {
     public static bool RequestAddItem(StrucItem item)
     {
-        List<StrucItem> listItem = DataWorkFlow.DownloadListItem();
+        List<StrucItem>? listItem = DataWorkFlow.DownloadListItem();
         listItem.Add(item);
         return DataWorkFlow.UploadItemList(listItem);
         
     }
 
-    public static List<StrucItem> RequestLoadStore()
+    public static List<StrucItem>? RequestLoadStore()
     {
         return DataWorkFlow.DownloadListItem();
         
     }
 
-    public static bool RequestUploadStore(List<StrucItem> listItems)
+    public static bool RequestUploadStore(List<StrucItem>? listItems)
     {
         return DataWorkFlow.UploadItemList(listItems);
     }
 
-    public static StrucItem FindItem(string itemId,List<StrucItem> listItems) //tim item target
+    public static StrucItem FindItem(string itemId,List<StrucItem>? listItems) //tim item target
     {
         foreach (StrucItem item in listItems)
         {
@@ -38,7 +38,7 @@ public static class SolvingItem
 
     public static bool RequestUpdateItem(string itemId, StrucItem newItem)
     {
-        List<StrucItem> currentListItems = RequestLoadStore();
+        List<StrucItem>? currentListItems = RequestLoadStore();
         if (DateManipulate.ConvertStringtoDateTime(newItem.Exp)<DateManipulate.ConvertStringtoDateTime(newItem.Mfg))
         {
             return false;
@@ -56,8 +56,8 @@ public static class SolvingItem
 
     public static bool RequestRemoveItem(string Id)
     {
-        List<StrucItem> currentListItems = RequestLoadStore();
-        List<StrucItem> newListItems = new List<StrucItem>();
+        List<StrucItem>? currentListItems = RequestLoadStore();
+        List<StrucItem>? newListItems = new List<StrucItem>();
         foreach (StrucItem item in currentListItems)
         {
             if (!item.Id.Contains(Id))
@@ -69,11 +69,11 @@ public static class SolvingItem
         return DataWorkFlow.UploadItemList(newListItems);
     }
 
-    public static List<StrucItem> FinalistItems(string keyword, string funcchoice)
+    public static List<StrucItem>? FindlistItems(string keyword, string funcchoice)
     {
         List<string> resItemsId = new List<string>();
-        List<StrucItem> currentStrucItemsList = RequestLoadStore();
-        List<StrucItem> resList = new List<StrucItem>();
+        List<StrucItem>? currentStrucItemsList = RequestLoadStore();
+        List<StrucItem>? resList = new List<StrucItem>();
         switch (funcchoice)
         {
             case "0":

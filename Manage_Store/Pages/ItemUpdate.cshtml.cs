@@ -10,7 +10,7 @@ public class ItemUpdate : PageModel
 {
 
     public List<string> ListLabel = DataWorkFlow.DownloadListLabel();
-    public List<StrucItem> ListItems = DataWorkFlow.DownloadListItem();
+    public List<StrucItem>? ListItems = DataWorkFlow.DownloadListItem();
     public List<string> ItemlabelList = new List<string>();
     public bool StatusUpdateData;
     public string Notification { get; set; }
@@ -37,7 +37,8 @@ public class ItemUpdate : PageModel
         // ItemId = ManipulateFunction.CreateItemId();
         StrucItem item = SolvingItem.FindItem(id, ListItems);
         ItemlabelList.Add(item.Label);
-        foreach (string s in ListLabel)
+        List<string> showlist = ListLabel;
+        foreach (string s in showlist)
         {
             if (!ItemlabelList.Contains(s))
             {

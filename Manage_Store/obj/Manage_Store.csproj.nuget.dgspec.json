@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj": {}
+    "D:\\Mitek Onedrive\\OneDrive - MiTek\\Learning\\HK3\\LTHDT\\21880005_DoAn_LTHDT\\21880005_DoAn_KTLT\\Manage_Store\\Manage_Store\\Manage_Store.csproj": {}
   },
   "projects": {
-    "/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj": {
+    "D:\\Mitek Onedrive\\OneDrive - MiTek\\Learning\\HK3\\LTHDT\\21880005_DoAn_LTHDT\\21880005_DoAn_KTLT\\Manage_Store\\Manage_Store\\Manage_Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj",
+        "projectUniqueName": "D:\\Mitek Onedrive\\OneDrive - MiTek\\Learning\\HK3\\LTHDT\\21880005_DoAn_LTHDT\\21880005_DoAn_KTLT\\Manage_Store\\Manage_Store\\Manage_Store.csproj",
         "projectName": "Manage_Store",
-        "projectPath": "/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj",
-        "packagesPath": "/Users/tonypham/.nuget/packages/",
-        "outputPath": "/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/",
+        "projectPath": "D:\\Mitek Onedrive\\OneDrive - MiTek\\Learning\\HK3\\LTHDT\\21880005_DoAn_LTHDT\\21880005_DoAn_KTLT\\Manage_Store\\Manage_Store\\Manage_Store.csproj",
+        "packagesPath": "C:\\Users\\AnhPT2\\.nuget\\packages\\",
+        "outputPath": "D:\\Mitek Onedrive\\OneDrive - MiTek\\Learning\\HK3\\LTHDT\\21880005_DoAn_LTHDT\\21880005_DoAn_KTLT\\Manage_Store\\Manage_Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tonypham/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\AnhPT2\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -49,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\AnhPT2\\.dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

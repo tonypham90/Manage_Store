@@ -1,19 +1,64 @@
 @page
+@using Manage_Store.Entity
 @model Manage_Store.Pages.Import
 
 @{
-    
+    ViewData["Title"] = "Lich Su nhap hang";
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title></title>
+    <title>@ViewData.ToString()</title>
 </head>
 <body>
 <div>
-    
+    <section>
+        <fieldset class="border-primary">
+            <legend title="Tim kiem">
+                <form method="post">
+                    <label for="find" class="form-label">Chuc nang tim kiem</label>
+                    <select name="choicefunc">Tim theo thong tin:
+                        <option value="1">Ma Nhap Kho</option>
+                        <option value="2">Ma San Pham</option>
+                        <option value="3">Ngay Nhap Kho</option>
+                    </select>
+                    <label for="keyword">Keyword</label>
+                    <input type="text" name="keyword"/>
+                    <input type="submit" value="Tim kiem"/>
+                </form>
+            </legend>
+        </fieldset>
+    </section>
+    <section1>
+        <table title="Lich su nhap kho" class="table">
+            <h1 class="align-self-xxl-center"> Danh Sach San Pham</h1>
+            <tr class="text-center table-primary">
+                <th>Ma Nhap Kho</th>
+                <th>Ma san pham</th>
+                <th>Ngay Nhap Kho</th>
+                <th>So luong</th>
+                <th>Tinh Nang</th>
+            </tr>
+
+            @{
+                foreach (ImportRecord Item in @Model.ImportShow)
+                {
+                    <tr>
+                        <td>@Item.ImportId</td>
+                        <td>@Item.ItemId</td>
+                        <td>@Item.Date</td>
+                        <td>@Item.ImportQty.ToString("0")</td>
+                        <td>
+                            <button class="btn btn-outline-secondary" onclick="window.location.href='/importupdate?importid=@Item.ImportId'">Cap Nhat</button>
+                            <button class="btn btn-outline-secondary" onclick="window.location.href='/importremove?importid=@Item.ImportId'">Xoa</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </section1>
 </div>
 </body>
 </html>

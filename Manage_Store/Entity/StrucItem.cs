@@ -10,3 +10,11 @@ public struct StrucItem
     public int Price;
     public string Exp,Mfg;
 }
+
+public struct ImportRecord
+{
+    public string Date;
+    public string? ImportId;
+    public string ItemId;
+    public int ImportQty;
+}

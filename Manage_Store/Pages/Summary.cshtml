@@ -1,23 +1,44 @@
 @page
+@using Manage_Store.Service
 @using Manage_Store.Entity
-@model Manage_Store.Pages.LabelRemove
+@model Manage_Store.Pages.Summary
 
 @{
-    
+    ViewData["title"] = "Thong ke kho hang";
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title>Xoa san pham</title>
+    <title></title>
 </head>
 <body>
 <div>
-    Cac mat hang se bi xoa:
+    <section>
+        <h2>Thong ke hang hoa theo loai hang</h2>
+        <table class="table">
+            <tr>
+                <th>Loai Hang</th>
+                <th>So luong</th>
+            </tr>
+           
+                @{
+                    foreach (string s in @Model.labelList)
+                    {
+                        <tr>
+                            <td>@s</td>
+                            <td>@CaculateSummary.countItemLabel(s).ToString("0")</td>
+                            </tr>
+                    }
+                }
+           
+        </table>
+    </section>
+    <br/><br/>
     <section1>
-    <table title="San Pham trong kho" class="table">
-            <h1 class="align-self-xxl-center"> Danh Sach San Pham</h1>
+        <table title="San Pham Qua hang Su dung" class="table">
+            <h2 class="align-self-xxl-center"> Danh Sach San Pham Qua hang su dung</h2>
             <tr class="text-center table-primary">
                 <th>Ma san pham</th>
                 <th>Ten</th>
@@ -29,9 +50,9 @@
                 <th>Loai</th>
                 <th>Chuc Nang</th>
             </tr>
-    
+            
                 @{
-                    foreach (StrucItem Item in @Model.removeItemsList)
+                    foreach (StrucItem Item in @Model.listItemOverDue)
                     {
                         <tr>
                             <td>@Item.Id</td>
@@ -52,12 +73,6 @@
                 }
         </table>
     </section1>
-    <form method="post">
-        <label class="text-warning">Loai Hang can xoa: (Luu Y: Khi xoa se xoa theo cac mat hang co cung loai hang nay)</label><br/>
-        <input type="text" name="RemoveLabel" value="@Model.Label" readonly="readonly"/>
-        <input type="submit" value="Xoa"/><button type="button" value="Return" onclick="window.location.href='/lablecreate'">Ve danh Sach Mat Hang</button>
-    </form>
-    @Model.Notification
 </div>
 </body>
 </html>

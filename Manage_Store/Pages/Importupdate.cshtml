@@ -1,0 +1,31 @@
+@page
+@using Manage_Store.Service
+@model Manage_Store.Pages.Importupdate
+
+@{
+    ViewData["title"] = "Cap Nhat don nhap hang";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewData</title>
+</head>
+<body>
+<div> <h5>Cap Nhat don hang</h5>
+    <form method="post">
+        <label>Ma hang dieu chinh: </label>
+        <input class="text-dark" type="text" readonly="readonly" value="@Model.importid" name="importid"/><br/>
+        <label>Ma san pham dieu chinh:</label>
+        <input class="text-dark" type="text" readonly="readonly" value="@Model.itemId" name="itemId"/><br/>
+        <label>So luong:</label><br/>
+        <input type="number" value="@Model.importvalue.ToString("D0")" name="importvalue" class="text-dark" step="1" min="0"/><br/>
+        <label>Ngay nhap (Ngay ghi hien tai: @DateManipulate.ConvertDatetoString(@Model.importdate))</label><br/>
+        <input type="date" name="importdate" required="required" autocomplete="off" minlength="1"/><br/>
+        <input type="submit" value="Cap nhat"/> <input type="button" value="tro ve" onclick="window.location.href='/import'"/>
+    </form>
+</div>
+@Model.Notification
+</body>
+</html>

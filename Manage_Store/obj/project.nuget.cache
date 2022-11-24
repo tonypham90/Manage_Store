@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "O1uaXuK/OirBsidt4yWRfql8DTVK9KEK0bs3EWWzNSLwQeC76l0QF1PMeC6T8cme+YgZJyMNDYKpB6V5RA5ujw==",
+  "dgSpecHash": "IlfJdZ5lSkEY/hI4ypTLrf/UCJq3ySMqVgiGuk2+tF8xTFELe75StYeylVogadS/Ol0indw1fNL6YkUd7f73Pg==",
   "success": true,
-  "projectFilePath": "/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj",
+  "projectFilePath": "D:\\Mitek Onedrive\\OneDrive - MiTek\\Learning\\HK3\\LTHDT\\21880005_DoAn_LTHDT\\21880005_DoAn_KTLT\\Manage_Store\\Manage_Store\\Manage_Store.csproj",
   "expectedPackageFiles": [
-    "/Users/tonypham/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\AnhPT2\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

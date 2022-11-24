@@ -8,73 +8,93 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Manage_Store
 build_property.RootNamespace = Manage_Store
-build_property.ProjectDir = /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/
+build_property.ProjectDir = D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store
+build_property.MSBuildProjectDirectory = D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Import.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW1wb3J0LmNzaHRtbA==
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Import.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ImportNew.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0TmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbUNyZWF0ZS5jc2h0bWw=
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Importremove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0cmVtb3ZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemRemove.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbVJlbW92ZS5jc2h0bWw=
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Importupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0dXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbVVwZGF0ZS5jc2h0bWw=
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFiZWxDcmVhdGUuY3NodG1s
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXRlbUNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelRemove.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFiZWxSZW1vdmUuY3NodG1s
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemRemove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXRlbVJlbW92ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFiZWxVcGRhdGUuY3NodG1s
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXRlbVVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFiZWxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Sale.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2FsZS5jc2h0bWw=
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelRemove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFiZWxSZW1vdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFiZWxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Store.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3RvcmUuY3NodG1s
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Sale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-x88acc4crl
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Store.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/TestPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Mitek Onedrive/OneDrive - MiTek/Learning/HK3/LTHDT/21880005_DoAn_LTHDT/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b7qinuw2si

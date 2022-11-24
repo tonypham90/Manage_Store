@@ -7,13 +7,15 @@ namespace Manage_Store.Pages;
 
 public class ItemRemove : PageModel
 {
-    public List<StrucItem> CurrentItemsList = SolvingItem.RequestLoadStore();
-    public string Notification = String.Empty;
+    public List<StrucItem>? CurrentItemsList = SolvingItem.RequestLoadStore();
+    [BindProperty]
+    public string Notification { get; set; }
     public bool statusRemoveItem;
     [BindProperty(SupportsGet = true)] 
     public string id { get; set; }
     public void OnGet()
     {
+        
         Notification = String.Empty;
     }
 

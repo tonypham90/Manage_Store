@@ -15,8 +15,8 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
-    public List<StrucItem> ItemsInStore = SolvingItem.RequestLoadStore();
-    public List<StrucItem> ItemsShow { get; set; }
+    public List<StrucItem>? ItemsInStore = SolvingItem.RequestLoadStore();
+    public List<StrucItem>? ItemsShow { get; set; }
     [BindProperty]
     public string ChoiceFunc { get; set; }
     [BindProperty]
@@ -37,7 +37,7 @@ public class IndexModel : PageModel
         }
         else
         {
-            ItemsShow = SolvingItem.FinalistItems(Keyword, ChoiceFunc);
+            ItemsShow = SolvingItem.FindlistItems(Keyword, ChoiceFunc);
         }
     }
 }

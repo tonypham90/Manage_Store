@@ -59,9 +59,9 @@ public static class DataWorkFlow
     //end space for label
 
     //Store info
-    public static List<StrucItem> DownloadListItem()
+    public static List<StrucItem>? DownloadListItem()
     {
-        List<StrucItem> resList = new List<StrucItem>();
+        List<StrucItem>? resList = new List<StrucItem>();
         StreamReader fileReader = new StreamReader(ItemStore.FullName);
         string jsonstring = fileReader.ReadToEnd();
         fileReader.Close();
@@ -73,7 +73,7 @@ public static class DataWorkFlow
         return resList;
     }
     
-    public static bool UploadItemList(List<StrucItem> listItems)
+    public static bool UploadItemList(List<StrucItem>? listItems)
     {
         if (listItems.Count==0)
         {
@@ -89,6 +89,21 @@ public static class DataWorkFlow
     //End Of store info
 
     //import store
+    public static List<ImportRecord>? LoadImportHistory()
+    {
+        StreamReader fileReader = new StreamReader(ImportRecord.FullName);
+        string Jsonstring = fileReader.ReadToEnd();
+        fileReader.Close();
+        return JsonConvert.DeserializeObject<List<ImportRecord>>(Jsonstring);
+    }
+
+    public static bool UploadImportHistory(List<ImportRecord> Historylist)
+    {
+        StreamWriter fileWriter = new StreamWriter(ImportRecord.FullName);
+        fileWriter.Write(JsonConvert.SerializeObject(Historylist));
+        fileWriter.Close();
+        return true;
+    }
 
     //End Import
 
