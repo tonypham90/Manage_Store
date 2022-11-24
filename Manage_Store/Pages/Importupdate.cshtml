@@ -21,7 +21,7 @@
         <input class="text-dark" type="text" readonly="readonly" value="@Model.itemId" name="itemId"/><br/>
         <label>So luong:</label><br/>
         <input type="number" value="@Model.importvalue.ToString("D0")" name="importvalue" class="text-dark" step="1" min="0"/><br/>
-        <label>Ngay nhap (Ngay ghi hien tai: @DateManipulate.ConvertDatetoString(@Model.importdate))</label><br/>
+        <label>Ngay nhap (Ngay ghi hien tai: @Model.Importdatestring)</label><br/>
         <input type="date" name="importdate" required="required" autocomplete="off" minlength="1"/><br/>
         <input type="submit" value="Cap nhat"/> <input type="button" value="tro ve" onclick="window.location.href='/import'"/>
     </form>

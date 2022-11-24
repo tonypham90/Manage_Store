@@ -6,10 +6,22 @@ namespace Manage_Store.Pages;
 
 public class Summary : PageModel
 {
-    public List<string> labelList = SolvingItemLabel.CurrentLabel();
-    public List<StrucItem> listItemOverDue = CaculateSummary.listOverdue();
+    public Operation sv;
+    public DataFlow df;
+    public List<string> labelList { get; set; }
+    public List<StrucItem> listItemOverDue { get; set; }
+    public List<string[]> showlist { get; set; }
 
     public void OnGet()
     {
+         labelList = sv.SolvingItemLabel.CurrentLabel();
+         listItemOverDue = sv.CaculateSummary.listOverdue();
+         showlist = new List<string[]>();
+         foreach (var label in labelList)
+         {
+             var row = new string[2];
+             row[0] = label;
+             row[1] = sv.CaculateSummary.countItemLabel(label).ToString();
+         }
     }
 }

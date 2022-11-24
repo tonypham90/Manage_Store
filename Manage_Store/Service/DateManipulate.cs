@@ -2,13 +2,13 @@ namespace Manage_Store.Service;
 
 public class DateManipulate
 {
-    public static string ConvertDatetoString(DateTime dateTime)
+    public string ConvertDatetoString(DateTime dateTime)
     {
         string result = $"{dateTime.Day.ToString("00")}-{dateTime.Month.ToString("00")}-{dateTime.Year.ToString("0000")}";
         return result;
     }
 
-    public static DateTime ConvertStringtoDateTime(string stringDate)
+    public DateTime ConvertStringtoDateTime(string stringDate)
     {
         string[] rawDate = stringDate.Split("-");
         int day = int.Parse(rawDate[0]);

@@ -5,29 +5,37 @@ namespace Manage_Store.Service;
 
 public class ImportStore
 {
-    public static bool RequestnewImport(ImportRecord newImportRecord)
+    private Operation sv;
+    private DataFlow df;
+
+    public ImportStore()
+    {
+        sv = new Operation();
+        df = new DataFlow();
+    }
+    public bool RequestnewImport(ImportRecord newImportRecord)
     {
         List<ImportRecord>? currentImportRecords = DataWorkFlow.LoadImportHistory();
-        List<StrucItem>? currentItemsList = SolvingItem.RequestLoadStore();
+        List<StrucItem>? currentItemsList = sv.SolvingItem.RequestLoadStore();
         
         if (newImportRecord.ImportQty==0||string.IsNullOrEmpty(newImportRecord.Date))
         {
             return false;
         }
         currentImportRecords.Add(newImportRecord);
-        StrucItem itemneedUpdate = SolvingItem.FindItem(newImportRecord.ItemId, currentItemsList);
+        StrucItem itemneedUpdate = sv.SolvingItem.FindItem(newImportRecord.ItemId, currentItemsList);
         itemneedUpdate.Qty += newImportRecord.ImportQty;
-        bool statusupdateItem = SolvingItem.RequestUpdateItem(newImportRecord.ItemId, itemneedUpdate);
+        bool statusupdateItem = sv.SolvingItem.RequestUpdateItem(newImportRecord.ItemId, itemneedUpdate);
         bool statusuploadImportRecord = DataWorkFlow.UploadImportHistory(currentImportRecords);
         return statusupdateItem && statusuploadImportRecord;
     }
 
-    public static List<ImportRecord> RequestLoadImportRecords()
+    public List<ImportRecord> RequestLoadImportRecords()
     {
         return DataWorkFlow.LoadImportHistory();
     }
 
-    public static List<ImportRecord> FindListRecords(string keyword, string function)
+    public List<ImportRecord> FindListRecords(string keyword, string function)
     {
         List<ImportRecord> resList = new List<ImportRecord>();
         List<ImportRecord> currentRecords = DataWorkFlow.LoadImportHistory();
@@ -64,10 +72,10 @@ public class ImportStore
         return resList;
     }
 
-    public static bool RequestUpdateImportRecord(ImportRecord newRecord)
+    public bool RequestUpdateImportRecord(ImportRecord newRecord)
     {
         List<ImportRecord> currentRecords = RequestLoadImportRecords();
-        List<StrucItem> currentItemsList = SolvingItem.RequestLoadStore();
+        List<StrucItem> currentItemsList = sv.SolvingItem.RequestLoadStore();
         ImportRecord oldRecord = new ImportRecord();
         bool statusupdateItem = false, statusupdateRecord = false;
         
@@ -78,14 +86,14 @@ public class ImportStore
                 oldRecord = record;
             }
         }
-        StrucItem oldItem = SolvingItem.FindItem(oldRecord.ItemId, currentItemsList);
+        StrucItem oldItem = sv.SolvingItem.FindItem(oldRecord.ItemId, currentItemsList);
         oldItem.Qty += newRecord.ImportQty - oldItem.Qty;
         for (int i = 0; i < currentItemsList.Count; i++)
         {
             if (currentItemsList[i].Id.Contains(oldItem.Id))
             {
                 currentItemsList[i] = oldItem;
-                statusupdateItem = SolvingItem.RequestUpdateItem(oldItem.Id, oldItem);
+                statusupdateItem = sv.SolvingItem.RequestUpdateItem(oldItem.Id, oldItem);
             }
         }
 
@@ -101,10 +109,10 @@ public class ImportStore
         return statusupdateItem && statusupdateRecord;
     }
 
-    public static bool RequestRemoveImportReport(string importId)
+    public bool RequestRemoveImportReport(string importId)
     {
         List<ImportRecord> currentImportRecords = RequestLoadImportRecords();
-        List<StrucItem> currentItemsList = SolvingItem.RequestLoadStore();
+        List<StrucItem> currentItemsList = sv.SolvingItem.RequestLoadStore();
         bool statusupdateItem = false, statusremoveImportRecord = false;
         ImportRecord importRecordneedremove = new ImportRecord();
         foreach (ImportRecord record in currentImportRecords)
@@ -116,7 +124,7 @@ public class ImportStore
             }
         }
 
-        StrucItem itemUpdate = SolvingItem.FindItem(importRecordneedremove.ItemId, currentItemsList);
+        StrucItem itemUpdate = sv.SolvingItem.FindItem(importRecordneedremove.ItemId, currentItemsList);
         int variance = itemUpdate.Qty - importRecordneedremove.ImportQty;
         if (variance<0)
         {
@@ -127,7 +135,7 @@ public class ImportStore
             itemUpdate.Qty = variance;
         }
 
-        statusupdateItem = SolvingItem.RequestUpdateItem(itemUpdate.Id, itemUpdate);
+        statusupdateItem = sv.SolvingItem.RequestUpdateItem(itemUpdate.Id, itemUpdate);
         currentImportRecords.Remove(importRecordneedremove);
         statusremoveImportRecord = DataWorkFlow.UploadImportHistory(currentImportRecords);
         return statusupdateItem && statusremoveImportRecord;

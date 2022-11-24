@@ -5,7 +5,15 @@ namespace Manage_Store.Service;
 
 public class ManipulateFunction
 {
-    public static string CreateItemId()
+    private Operation sv;
+    private DataFlow df;
+
+    public ManipulateFunction()
+    {
+        sv = new Operation();
+        df = new DataFlow();
+    }
+    public string CreateItemId()
     {
         List<StrucItem>? currentListItem = DataWorkFlow.DownloadListItem();
         string id = String.Empty;
@@ -21,7 +29,7 @@ public class ManipulateFunction
         }
         return id;
     }
-    public static string? NewImportId()
+    public string? NewImportId()
     {
         List<ImportRecord>? currentList = DataWorkFlow.LoadImportHistory();
         string? id = string.Empty;

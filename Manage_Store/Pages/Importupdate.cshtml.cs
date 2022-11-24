@@ -7,7 +7,9 @@ namespace Manage_Store.Pages;
 
 public class Importupdate : PageModel
 {
-    public List<ImportRecord> CurrentImportRecords = ImportStore.RequestLoadImportRecords();
+    public Operation sv;
+    public DataFlow df;
+    public List<ImportRecord> CurrentImportRecords { get; set; }
     [BindProperty (SupportsGet = true)]
     public string importid { get; set; }
     [BindProperty] public string itemId { get; set; }
@@ -18,8 +20,10 @@ public class Importupdate : PageModel
     public int importvalue { get; set; }
     [BindProperty]
     public DateTime importdate { get; set; }
+    public string Importdatestring { get; set; }
     public void OnGet()
     {
+        CurrentImportRecords = sv.ImportStore.RequestLoadImportRecords();
         ImportRecord RecordneedUpdate = new ImportRecord();
         foreach (ImportRecord record in CurrentImportRecords)
         {
@@ -31,7 +35,8 @@ public class Importupdate : PageModel
         }
 
         importvalue = RecordneedUpdate.ImportQty;
-        importdate = DateManipulate.ConvertStringtoDateTime(RecordneedUpdate.Date) ;
+        importdate = sv.DateManipulate.ConvertStringtoDateTime(RecordneedUpdate.Date) ;
+        Importdatestring = RecordneedUpdate.Date;
         itemId = RecordneedUpdate.ItemId;
         Notification = string.Empty;
     }
@@ -39,11 +44,11 @@ public class Importupdate : PageModel
     public void OnPost()
     {
         ImportRecord newRecord = new ImportRecord();
-        newRecord.Date = DateManipulate.ConvertDatetoString(importdate);
+        newRecord.Date = sv.DateManipulate.ConvertDatetoString(importdate);
         newRecord.ItemId = itemId;
         newRecord.ImportQty = importvalue;
         newRecord.ImportId = importid;
-        statusupdate = ImportStore.RequestUpdateImportRecord(newRecord);
+        statusupdate = sv.ImportStore.RequestUpdateImportRecord(newRecord);
         if (statusupdate)
         {
             Response.Redirect("/import");

@@ -7,6 +7,8 @@ namespace Manage_Store.Pages;
 
 public class LabelUpdate : PageModel
 {
+    private Service.Operation sv;
+    private DataFlow df;
     public string Notification { get; set; } = null!;
     // [BindProperty]
     // public List<StrucItem>? RemoveList { get; set; }
@@ -27,6 +29,6 @@ public class LabelUpdate : PageModel
     }
     public void OnPost()
     {
-        Notification = SolvingItemLabel.UpdateLabel(Label, NewLabel);
+        Notification = sv.SolvingItemLabel.UpdateLabel(Label, NewLabel);
     }
 }

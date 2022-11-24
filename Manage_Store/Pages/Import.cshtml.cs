@@ -7,7 +7,9 @@ namespace Manage_Store.Pages;
 
 public class Import : PageModel
 {
-    public List<ImportRecord> HistoryImportRecords = ImportStore.RequestLoadImportRecords();
+    private Operation sv;
+    private DataFlow df;
+    public List<ImportRecord> HistoryImportRecords { get; set; }
     [BindProperty] public List<ImportRecord> ImportShow { get; set; }
     [BindProperty] public string choicefunc { get; set; }
 
@@ -15,6 +17,7 @@ public class Import : PageModel
     public string keyword { get; set; }
     public void OnGet()
     {
+        HistoryImportRecords = sv.ImportStore.RequestLoadImportRecords();
         ImportShow = HistoryImportRecords;
         keyword = string.Empty;
     }
@@ -23,9 +26,10 @@ public class Import : PageModel
     {
         if (string.IsNullOrEmpty(keyword))
         {
+            HistoryImportRecords = sv.ImportStore.RequestLoadImportRecords();
             ImportShow = HistoryImportRecords;
         }
 
-        ImportShow = ImportStore.FindListRecords(keyword, choicefunc);
+        ImportShow = sv.ImportStore.FindListRecords(keyword, choicefunc);
     }
 }

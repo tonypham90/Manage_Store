@@ -8,9 +8,11 @@ namespace Manage_Store.Pages;
 
 public class ItemUpdate : PageModel
 {
+    public Operation sv;
+    public DataFlow df;
 
-    public List<string> ListLabel = DataWorkFlow.DownloadListLabel();
-    public List<StrucItem>? ListItems = DataWorkFlow.DownloadListItem();
+    public List<string> ListLabel { get; set; }
+    public List<StrucItem>? ListItems { get; set; }
     public List<string> ItemlabelList = new List<string>();
     public bool StatusUpdateData;
     public string Notification { get; set; }
@@ -34,8 +36,10 @@ public class ItemUpdate : PageModel
     
     public void OnGet()
     {
+        ListLabel = DataWorkFlow.DownloadListLabel();
         // ItemId = ManipulateFunction.CreateItemId();
-        StrucItem item = SolvingItem.FindItem(id, ListItems);
+        ListItems = DataWorkFlow.DownloadListItem();
+        var item = sv.SolvingItem.FindItem(id, ListItems);
         ItemlabelList.Add(item.Label);
         List<string> showlist = ListLabel;
         foreach (string s in showlist)
@@ -50,8 +54,8 @@ public class ItemUpdate : PageModel
         ItemQty = item.Qty;
         ItemLabel = item.Label;
         ItemPrice = item.Price;
-        ItemExp = DateManipulate.ConvertStringtoDateTime(item.Exp);
-        ItemMfg = DateManipulate.ConvertStringtoDateTime(item.Mfg);
+        ItemExp = sv.DateManipulate.ConvertStringtoDateTime(item.Exp);
+        ItemMfg = sv.DateManipulate.ConvertStringtoDateTime(item.Mfg);
         Notification = String.Empty;
     }
 
@@ -63,12 +67,12 @@ public class ItemUpdate : PageModel
         itemUpdated.Manufacture = ItemManu;
         itemUpdated.Qty = ItemQty;
         itemUpdated.Label = ItemLabel;
-        itemUpdated.Exp = DateManipulate.ConvertDatetoString(ItemExp);
-        itemUpdated.Mfg = DateManipulate.ConvertDatetoString(ItemMfg);
+        itemUpdated.Exp = sv.DateManipulate.ConvertDatetoString(ItemExp);
+        itemUpdated.Mfg = sv.DateManipulate.ConvertDatetoString(ItemMfg);
         itemUpdated.Price = ItemPrice;
         
         
-        StatusUpdateData = SolvingItem.RequestUpdateItem(id,itemUpdated);
+        StatusUpdateData = sv.SolvingItem.RequestUpdateItem(id,itemUpdated);
         switch (StatusUpdateData)
         {
             case true:

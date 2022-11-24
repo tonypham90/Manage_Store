@@ -9,6 +9,8 @@ namespace Manage_Store.Pages;
 
 public class LabelRemove : PageModel
 {
+    public Operation sv;
+    public DataFlow df;
     public string? Notification { get; set; }
     [BindProperty]
     public List<StrucItem> removeItemsList { get; set; }
@@ -21,13 +23,13 @@ public class LabelRemove : PageModel
     {
         Notification = String.Empty;
         string choicefuncFind = "4";
-        removeItemsList = SolvingItem.FindlistItems(Label, choicefuncFind);
+        removeItemsList = sv.SolvingItem.FindlistItems(Label, choicefuncFind);
     }
 
     public void OnPost()
     {
         TargetLabel = Label;
-        Notification = SolvingItemLabel.RemoveLabel(TargetLabel);
+        Notification = sv.SolvingItemLabel.RemoveLabel(TargetLabel);
     }
         
 }

@@ -6,7 +6,15 @@ namespace Manage_Store.Service;
 
 public class SolvingItemLabel
 {
-    public static string AddNewLabel(string newLabel)
+    private Operation sv;
+    private DataFlow df;
+
+    public SolvingItemLabel()
+    {
+        sv = new Operation();
+        df = new DataFlow();
+    }
+    public string AddNewLabel(string newLabel)
     {
         bool isAddingGood = DataWorkFlow.AddNewLabel(newLabel.ToUpper());
         if (isAddingGood)
@@ -16,12 +24,12 @@ public class SolvingItemLabel
         return $"Loai hang da ton tai";
     }
 
-    public static List<string> CurrentLabel()
+    public List<string> CurrentLabel()
     {
         return DataWorkFlow.DownloadListLabel();
     }
 
-    public static string RemoveLabel(string labelTarget)
+    public string RemoveLabel(string labelTarget)
     {
         List<string> currentLabelList = DataWorkFlow.DownloadListLabel();
         List<string> newLabeList = new List<string>();
@@ -42,7 +50,7 @@ public class SolvingItemLabel
         return $"Ton tai {Iscontain}.Da xoa loai hang {labelTarget} va {countItemRemoved} co cung loai hang";
     }
 
-    public static string UpdateLabel(string? oldLabel, string? newLabel)
+    public string UpdateLabel(string? oldLabel, string? newLabel)
     {
         List<string> currentLabelList = DataWorkFlow.DownloadListLabel();
         List<StrucItem>? currentItemsList = DataWorkFlow.DownloadListItem();
@@ -67,12 +75,12 @@ public class SolvingItemLabel
         }
         //Update Store
         string funcChoise = "4";//find Item case 4
-        ItemsneedUpdateID = SolvingItem.FindlistItems(oldLabel, funcChoise);
+        ItemsneedUpdateID = sv.SolvingItem.FindlistItems(oldLabel, funcChoise);
         foreach (StrucItem item in ItemsneedUpdateID)
         {
             StrucItem newItem = item;
             newItem.Label = newLabel;
-            SolvingItem.RequestUpdateItem(newItem.Id, newItem);
+            sv.SolvingItem.RequestUpdateItem(newItem.Id, newItem);
         }
 
         bool uploadstatus = DataWorkFlow.UploadLabel(newLabeList);

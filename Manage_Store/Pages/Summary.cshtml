@@ -24,11 +24,11 @@
             </tr>
            
                 @{
-                    foreach (string s in @Model.labelList)
+                    foreach (var s in @Model.showlist)
                     {
                         <tr>
-                            <td>@s</td>
-                            <td>@CaculateSummary.countItemLabel(s).ToString("0")</td>
+                            <td>@s[0]</td>
+                            <td>@s[1]</td>
                             </tr>
                     }
                 }

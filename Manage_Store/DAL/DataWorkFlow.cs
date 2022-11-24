@@ -1,16 +1,14 @@
+using Manage_Store.DATA;
 using Manage_Store.Entity;
+using Manage_Store.Service;
 using Newtonsoft.Json;
 
 namespace Manage_Store.DAL;
 
 public static class DataWorkFlow
 {
-    private static readonly string CurrentDir = Environment.CurrentDirectory;
-    private static readonly DirectoryInfo DirectoryInfo = new DirectoryInfo(CurrentDir);
-    private static readonly FileInfo ItemLabelList = new FileInfo("DataLabel.json");
-    private static readonly FileInfo ImportRecord = new FileInfo("DataImportHistory.json");
-    private static FileInfo SaleRecord { get; } = new FileInfo("DataSaleHistory.json");
-    private static readonly FileInfo ItemStore = new FileInfo("DataStore.json");
+
+    private static DataPath dp;
     
     //space for label
     public static bool AddNewLabel(string? newLabel)
@@ -32,7 +30,7 @@ public static class DataWorkFlow
     public static List<string> DownloadListLabel()
     {
         List<string> resList = new List<string>();
-        StreamReader fileReader = new StreamReader(ItemLabelList.FullName);
+        StreamReader fileReader = new StreamReader(DataPath.ItemLabel());
         string jsonstring = fileReader.ReadToEnd();
         fileReader.Close();
         if (string.IsNullOrEmpty(jsonstring))
@@ -49,7 +47,7 @@ public static class DataWorkFlow
         {
             return false;
         }
-        StreamWriter fileWriter = new StreamWriter(ItemLabelList.FullName);
+        StreamWriter fileWriter = new StreamWriter(DataPath.ItemLabel());
         string jsonstring = JsonConvert.SerializeObject(listLabel);
         fileWriter.Write(jsonstring);
         fileWriter.Close();
@@ -62,7 +60,7 @@ public static class DataWorkFlow
     public static List<StrucItem>? DownloadListItem()
     {
         List<StrucItem>? resList = new List<StrucItem>();
-        StreamReader fileReader = new StreamReader(ItemStore.FullName);
+        StreamReader fileReader = new StreamReader(DataPath.Item());
         string jsonstring = fileReader.ReadToEnd();
         fileReader.Close();
         if (string.IsNullOrEmpty(jsonstring))
@@ -79,7 +77,7 @@ public static class DataWorkFlow
         {
             return false;
         }
-        StreamWriter fileWriter = new StreamWriter(ItemStore.FullName);
+        StreamWriter fileWriter = new StreamWriter(DataPath.Item());
         string jsonstring = JsonConvert.SerializeObject(listItems);
         fileWriter.Write(jsonstring);
         fileWriter.Close();
@@ -91,7 +89,7 @@ public static class DataWorkFlow
     //import store
     public static List<ImportRecord>? LoadImportHistory()
     {
-        StreamReader fileReader = new StreamReader(ImportRecord.FullName);
+        StreamReader fileReader = new StreamReader(DataPath.Import());
         string Jsonstring = fileReader.ReadToEnd();
         fileReader.Close();
         return JsonConvert.DeserializeObject<List<ImportRecord>>(Jsonstring);
@@ -99,7 +97,7 @@ public static class DataWorkFlow
 
     public static bool UploadImportHistory(List<ImportRecord> Historylist)
     {
-        StreamWriter fileWriter = new StreamWriter(ImportRecord.FullName);
+        StreamWriter fileWriter = new StreamWriter(DataPath.Import());
         fileWriter.Write(JsonConvert.SerializeObject(Historylist));
         fileWriter.Close();
         return true;

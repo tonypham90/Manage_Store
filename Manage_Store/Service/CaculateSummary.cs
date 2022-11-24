@@ -4,13 +4,19 @@ namespace Manage_Store.Service;
 
 public class CaculateSummary
 {
-    public static List<StrucItem> listOverdue()
+    private Operation sv;
+
+    public CaculateSummary()
+    {
+        sv = new Operation();
+    }
+    public List<StrucItem> listOverdue()
     {
         List<StrucItem> resList = new List<StrucItem>();
-        List<StrucItem> currentItemsList = SolvingItem.RequestLoadStore();
+        List<StrucItem> currentItemsList = sv.SolvingItem.RequestLoadStore();
         foreach (StrucItem item in currentItemsList)
         {
-            DateTime itemdate = DateManipulate.ConvertStringtoDateTime(item.Exp);
+            DateTime itemdate = sv.DateManipulate.ConvertStringtoDateTime(item.Exp);
             if (itemdate<DateTime.Today)
             {
                 resList.Add(item);
@@ -19,9 +25,9 @@ public class CaculateSummary
         return resList;
     }
 
-    public static int countItemLabel(string label)
+    public int countItemLabel(string label)
     {
-        List<StrucItem> currentlistItems = SolvingItem.RequestLoadStore();
+        List<StrucItem> currentlistItems = sv.SolvingItem.RequestLoadStore();
         int count = 0;
         foreach (StrucItem item in currentlistItems)
         {

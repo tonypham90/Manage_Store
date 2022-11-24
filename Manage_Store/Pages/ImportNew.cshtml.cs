@@ -9,7 +9,9 @@ namespace Manage_Store.Pages;
 
 public class ImportNew : PageModel
 {
-    public static List<StrucItem>? CurrentListItems = DataWorkFlow.DownloadListItem();
+    public Operation sv;
+    public DataFlow df;
+    public static List<StrucItem>? CurrentListItems { get; set; }
     public bool Status;
     public string Notification { get; set; } = string.Empty;
     [BindProperty(SupportsGet = true)]
@@ -20,7 +22,7 @@ public class ImportNew : PageModel
     [BindProperty]
     public int ItemQty { get; set; }
 
-    public string? NewImportId = ManipulateFunction.NewImportId();
+    public string? NewImportId { get; set; }
     [BindProperty]
     public DateTime ImportDate { get; set; }
     [BindProperty]
@@ -28,7 +30,9 @@ public class ImportNew : PageModel
     
     public void OnGet()
     {
-        StrucItem currentItem = SolvingItem.FindItem(ItemId, CurrentListItems);
+        NewImportId = sv.ManipulateFunction.NewImportId();
+        CurrentListItems = DataWorkFlow.DownloadListItem();
+        var currentItem = sv.SolvingItem.FindItem(ItemId, CurrentListItems);
         Notification = String.Empty;
         ItemName = currentItem.Name;
         ItemId = currentItem.Id;
@@ -39,12 +43,12 @@ public class ImportNew : PageModel
     public void OnPost()
     {
         ImportRecord NewImport = new ImportRecord();
-        NewImport.Date = DateManipulate.ConvertDatetoString(ImportDate);
+        NewImport.Date = sv.DateManipulate.ConvertDatetoString(ImportDate);
         NewImport.ImportId = NewImportId;
         NewImport.ItemId = ItemId;
         NewImport.ImportQty = ImportQty;
-        Status = ImportStore.RequestnewImport(NewImport);
-        StrucItem currentItem = SolvingItem.FindItem(ItemId, CurrentListItems);
+        Status = sv.ImportStore.RequestnewImport(NewImport);
+        StrucItem currentItem = sv.SolvingItem.FindItem(ItemId, CurrentListItems);
         ItemQty = currentItem.Qty;
 
         switch (Status)

@@ -7,6 +7,8 @@ namespace Manage_Store.Pages;
 
 public class Importremove : PageModel
 {
+    public Service.Operation sv;
+    public DataFlow df;
     [BindProperty(SupportsGet = true)]
     public string importid { get; set; }
     [BindProperty]
@@ -14,16 +16,19 @@ public class Importremove : PageModel
     [BindProperty]
     public string notification { get; set; }
 
-    public List<StrucItem> CurrentItemsList = SolvingItem.RequestLoadStore();
-    public List<ImportRecord> CurrentRecords = ImportStore.RequestLoadImportRecords();
+    public List<StrucItem> CurrentItemsList { get; set; }
+    public List<ImportRecord> CurrentRecords { get; set; }
     public void OnGet()
     {
+        CurrentRecords = sv.ImportStore.RequestLoadImportRecords();
         notification = string.Empty;
+        CurrentItemsList = sv.SolvingItem.RequestLoadStore();
     }
 
     public void OnPost()
     {
-        statusRemoveRecord = ImportStore.RequestRemoveImportReport(importid);
+        
+        statusRemoveRecord = sv.ImportStore.RequestRemoveImportReport(importid);
         if (statusRemoveRecord)
         {
             Response.Redirect("/import");

@@ -1,6 +1,6 @@
 namespace Manage_Store.Entity;
 
-public struct StrucItem
+public class StrucItem
 {
     public string Id;
     public string Name;
@@ -11,7 +11,7 @@ public struct StrucItem
     public string Exp,Mfg;
 }
 
-public struct ImportRecord
+public class ImportRecord
 {
     public string Date;
     public string? ImportId;

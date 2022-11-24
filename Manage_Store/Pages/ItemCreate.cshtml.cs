@@ -8,12 +8,14 @@ namespace Manage_Store.Pages;
 
 public class ItemCreate : PageModel
 {
+    public Operation sv;
+    public DataFlow df;
 
-    public List<string> ListLabel = DataWorkFlow.DownloadListLabel();
+    public List<string> ListLabel { get; set; }
     public bool StatusRequestAddItem;
     [BindProperty] 
     public string Notification { get; set; }
-    public string ItemId = ManipulateFunction.CreateItemId();
+    public string ItemId { get; set; }
     [BindProperty]
     public string ItemName { get; set; }
     [BindProperty]
@@ -32,6 +34,7 @@ public class ItemCreate : PageModel
     
     public void OnGet()
     {
+        ListLabel = DataWorkFlow.DownloadListLabel();
         // ItemId = ManipulateFunction.CreateItemId();
         ItemName = String.Empty;
         ItemManu = String.Empty;
@@ -45,17 +48,18 @@ public class ItemCreate : PageModel
 
     public void OnPost()
     {
-        StrucItem newItem = new StrucItem();
+        var newItem = new StrucItem();
+        ItemId = sv.ManipulateFunction.CreateItemId();
         
         newItem.Id = ItemId;
         newItem.Name = ItemName;
         newItem.Manufacture = ItemManu;
         newItem.Qty = ItemQty;
         newItem.Label = ItemLabel;
-        newItem.Exp = DateManipulate.ConvertDatetoString(ItemExp);
-        newItem.Mfg = DateManipulate.ConvertDatetoString(ItemMfg);
+        newItem.Exp = sv.DateManipulate.ConvertDatetoString(ItemExp);
+        newItem.Mfg = sv.DateManipulate.ConvertDatetoString(ItemMfg);
         newItem.Price = ItemPrice;
-        StatusRequestAddItem = SolvingItem.RequestAddItem(newItem);
+        StatusRequestAddItem = sv.SolvingItem.RequestAddItem(newItem);
         switch (StatusRequestAddItem)
         {
             case true:

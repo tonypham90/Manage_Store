@@ -12,10 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="DATA" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Remove="Entity\Item.cs" />
     </ItemGroup>
 

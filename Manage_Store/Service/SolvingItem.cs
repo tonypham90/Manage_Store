@@ -3,9 +3,17 @@ using Manage_Store.Entity;
 
 namespace Manage_Store.Service;
 
-public static class SolvingItem
+public class SolvingItem
 {
-    public static bool RequestAddItem(StrucItem item)
+    private Operation sv;
+    private DataFlow df;
+
+    public SolvingItem()
+    {
+        sv = new Operation();
+        df = new DataFlow();
+    }
+    public bool RequestAddItem(StrucItem item)
     {
         List<StrucItem>? listItem = DataWorkFlow.DownloadListItem();
         listItem.Add(item);
@@ -13,18 +21,18 @@ public static class SolvingItem
         
     }
 
-    public static List<StrucItem>? RequestLoadStore()
+    public List<StrucItem>? RequestLoadStore()
     {
         return DataWorkFlow.DownloadListItem();
         
     }
 
-    public static bool RequestUploadStore(List<StrucItem>? listItems)
+    public bool RequestUploadStore(List<StrucItem>? listItems)
     {
         return DataWorkFlow.UploadItemList(listItems);
     }
 
-    public static StrucItem FindItem(string itemId,List<StrucItem>? listItems) //tim item target
+    public StrucItem FindItem(string itemId,List<StrucItem>? listItems) //tim item target
     {
         foreach (StrucItem item in listItems)
         {
@@ -36,10 +44,10 @@ public static class SolvingItem
         return new StrucItem();
     }
 
-    public static bool RequestUpdateItem(string itemId, StrucItem newItem)
+    public bool RequestUpdateItem(string itemId, StrucItem newItem)
     {
         List<StrucItem>? currentListItems = RequestLoadStore();
-        if (DateManipulate.ConvertStringtoDateTime(newItem.Exp)<DateManipulate.ConvertStringtoDateTime(newItem.Mfg))
+        if (sv.DateManipulate.ConvertStringtoDateTime(newItem.Exp)<sv.DateManipulate.ConvertStringtoDateTime(newItem.Mfg))
         {
             return false;
         }
@@ -54,7 +62,7 @@ public static class SolvingItem
         return false;
     }
 
-    public static bool RequestRemoveItem(string Id)
+    public bool RequestRemoveItem(string Id)
     {
         List<StrucItem>? currentListItems = RequestLoadStore();
         List<StrucItem>? newListItems = new List<StrucItem>();
@@ -69,7 +77,7 @@ public static class SolvingItem
         return DataWorkFlow.UploadItemList(newListItems);
     }
 
-    public static List<StrucItem>? FindlistItems(string keyword, string funcchoice)
+    public List<StrucItem>? FindlistItems(string keyword, string funcchoice)
     {
         List<string> resItemsId = new List<string>();
         List<StrucItem>? currentStrucItemsList = RequestLoadStore();

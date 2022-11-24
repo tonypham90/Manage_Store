@@ -7,7 +7,9 @@ namespace Manage_Store.Pages;
 
 public class ItemRemove : PageModel
 {
-    public List<StrucItem>? CurrentItemsList = SolvingItem.RequestLoadStore();
+    public Operation sv;
+    public DataFlow df;
+    public List<StrucItem>? CurrentItemsList { get; set; }
     [BindProperty]
     public string Notification { get; set; }
     public bool statusRemoveItem;
@@ -15,13 +17,13 @@ public class ItemRemove : PageModel
     public string id { get; set; }
     public void OnGet()
     {
-        
+        CurrentItemsList = sv.SolvingItem.RequestLoadStore();
         Notification = String.Empty;
     }
 
     public void OnPost()
     {
-        statusRemoveItem = SolvingItem.RequestRemoveItem(id);
+        statusRemoveItem = sv.SolvingItem.RequestRemoveItem(id);
         switch (statusRemoveItem)
         {
             case true:

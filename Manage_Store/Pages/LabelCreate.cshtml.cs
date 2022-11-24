@@ -7,6 +7,8 @@ namespace Manage_Store.Pages;
 
 public class LabelCreate : PageModel
 {
+    public Operation sv;
+    public DataFlow df;
     public string Nortification { get; set; }
     public List<string> Labelist { get; set; }
     [BindProperty] 
@@ -21,7 +23,7 @@ public class LabelCreate : PageModel
     public void OnPost()
     {
         string addNewLabel = NewLabel;
-        Nortification = SolvingItemLabel.AddNewLabel(addNewLabel);
+        Nortification = sv.SolvingItemLabel.AddNewLabel(addNewLabel);
         Labelist = DataWorkFlow.DownloadListLabel();
     }
     

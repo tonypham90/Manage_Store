@@ -58,3 +58,35 @@
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/DataSaleHistory.json
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/DataStore.json
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/Debug/net6.0/refint/Manage_Store.dll
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.csproj.AssemblyReference.cache
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.AssemblyInfoInputs.cache
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.AssemblyInfo.cs
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.csproj.CoreCompileInputs.cache
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.MvcApplicationPartsAssemblyInfo.cache
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.RazorAssemblyInfo.cache
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.RazorAssemblyInfo.cs
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.dll
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\refint\Manage_Store.dll
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.pdb
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\appsettings.Development.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\appsettings.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\DataImportHistory.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\DataLabel.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\DataSaleHistory.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\DataStore.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\Manage_Store.staticwebassets.runtime.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\Manage_Store.exe
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\Manage_Store.deps.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\Manage_Store.runtimeconfig.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\Manage_Store.dll
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\Manage_Store.pdb
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\staticwebassets.build.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\staticwebassets.development.json
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\scopedcss\bundle\Manage_Store.styles.css
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\scopedcss\projectbundle\Manage_Store.bundle.scp.css
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.csproj.CopyComplete
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\Manage_Store.genruntimeconfig.cache
+D:\Mitek Onedrive\OneDrive - MiTek\Learning\HK3\LTHDT\21880005_DoAn_LTHDT\21880005_DoAn_KTLT\Manage_Store\Manage_Store\obj\Debug\net6.0\ref\Manage_Store.dll
