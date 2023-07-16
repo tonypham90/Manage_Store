@@ -5,88 +5,69 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Manage_Store
 build_property.RootNamespace = Manage_Store
-build_property.ProjectDir = /Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/
+build_property.ProjectDir = /Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store
+build_property.MSBuildProjectDirectory = /Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Error.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ImportNew.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/ImportNew.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW1wb3J0TmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Importremove.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW1wb3J0cmVtb3ZlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Importupdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW1wb3J0dXBkYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Index.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemCreate.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/ItemCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbUNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemRemove.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/ItemRemove.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbVJlbW92ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/ItemUpdate.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/ItemUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbVVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelCreate.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/LabelCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFiZWxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelRemove.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/LabelRemove.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFiZWxSZW1vdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/LabelUpdate.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/LabelUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFiZWxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Privacy.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Store.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3RvcmUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Summary.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3VtbWFyeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/TestPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdFBhZ2UuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/_ViewImports.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/_ViewStart.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Pages/Shared/_Layout.cshtml]
+[/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x88acc4crl

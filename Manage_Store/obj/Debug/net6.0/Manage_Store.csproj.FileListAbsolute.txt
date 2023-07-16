@@ -62,3 +62,19 @@
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/Debug/net6.0/refint/Manage_Store.dll
 /Users/tonypham/Documents/GitHub/khoahoctunhien/Ky_Thuat_Lap_Trinh/21880005_DoAn_KTLT/Manage_Store/Manage_Store/bin/Debug/net6.0/DataBillDetail.json
 >>>>>>> Stashed changes
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.csproj.AssemblyReference.cache
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.AssemblyInfoInputs.cache
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.AssemblyInfo.cs
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.csproj.CoreCompileInputs.cache
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.MvcApplicationPartsAssemblyInfo.cache
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.RazorAssemblyInfo.cache
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.RazorAssemblyInfo.cs
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/staticwebassets/msbuild.Manage_Store.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/staticwebassets/msbuild.build.Manage_Store.props
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Manage_Store.props
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Manage_Store.props
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.dll
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/refint/Manage_Store.dll
+/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/Debug/net6.0/Manage_Store.pdb

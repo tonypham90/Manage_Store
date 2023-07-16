@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj": {}
+    "/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Manage_Store.csproj": {}
   },
   "projects": {
-    "/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj": {
+    "/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Manage_Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj",
+        "projectUniqueName": "/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Manage_Store.csproj",
         "projectName": "Manage_Store",
-        "projectPath": "/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/Manage_Store.csproj",
+        "projectPath": "/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/Manage_Store.csproj",
         "packagesPath": "/Users/tonypham/.nuget/packages/",
-        "outputPath": "/Users/tonypham/Library/CloudStorage/OneDrive-MiTek/Learning/HK3/LTHDT/Doan/21880005_DoAn_KTLT/Manage_Store/Manage_Store/obj/",
+        "outputPath": "/Users/tonypham/Library/CloudStorage/OneDrive-VNU-HCMUS/HK5/Chuyen de to chuc du lieu/Github/Manage_Store/Manage_Store/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tonypham/.nuget/NuGet/NuGet.Config"
@@ -20,6 +20,7 @@
           "net6.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     }
